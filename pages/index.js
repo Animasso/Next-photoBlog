@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { Slider } from "@/components/Slider";
 import Head from "next/head";
 import { SliderImages } from "@/components/SliderImages";
+import { Instagram } from "@/components/Instagram";
 export default function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ export default function Home() {
         message="Nature from all over the world"
       />
       <Slider sliderImages={SliderImages} />
+      <Instagram />
     </>
   );
 }
