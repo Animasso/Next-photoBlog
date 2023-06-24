@@ -15,7 +15,7 @@ export default function Home() {
         heading="Nature from different perseptive"
         message="Nature from all over the world"
       />
-      <Slider SliderImages={SliderImages} />
+      <Slider sliderImages={SliderImages} />
     </>
   );
 }
