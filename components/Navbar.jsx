@@ -35,10 +35,10 @@ export const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="p-4">
-            <Link href="/gallery">Gallery</Link>
+            <Link href="/#gallery">Gallery</Link>
           </li>
           <li className="p-4">
-            <Link href="/portfolio">Work</Link>
+            <Link href="/work">Work</Link>
           </li>
           <li className="p-4">
             <Link href="/contact">Contact</Link>
@@ -66,16 +66,24 @@ export const Navbar = () => {
         >
           <ul style={{ color: `${textColor}` }}>
             <li className=" p-4 text-4xl hover:text-gray-500">
-              <Link href="/">Home</Link>
+              <Link onClick={() => setOpenMenu(!openMenu)} href="/">
+                Home
+              </Link>
             </li>
             <li className=" p-4 text-4xl hover:text-gray-500">
-              <Link href="/gallery">Gallery</Link>
+              <Link onClick={() => setOpenMenu(!openMenu)} href="/#gallery">
+                Gallery
+              </Link>
             </li>
             <li className=" p-4 text-4xl hover:text-gray-500">
-              <Link href="/portfolio">Work</Link>
+              <Link onClick={() => setOpenMenu(!openMenu)} href="/work">
+                Work
+              </Link>
             </li>
             <li className=" p-4 text-4xl hover:text-gray-500">
-              <Link href="/contact">Contact</Link>
+              <Link onClick={() => setOpenMenu(!openMenu)} href="/contact">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
