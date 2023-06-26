@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero
-        heading="Nature from different perseptive"
+        heading="Nature from a different perseptive"
         message="Nature from all over the world"
       />
       <Slider sliderImages={SliderImages} />
