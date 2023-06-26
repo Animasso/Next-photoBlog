@@ -3,6 +3,7 @@ import { Slider } from "@/components/Slider";
 import Head from "next/head";
 import { SliderImages } from "@/components/SliderImages";
 import { Instagram } from "@/components/Instagram";
+
 export default function Home() {
   return (
     <>
