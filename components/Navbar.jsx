@@ -53,9 +53,15 @@ export const Navbar = () => {
           onClick={() => setOpenMenu(!openMenu)}
         >
           {openMenu ? (
-            <AiOutlineClose size={20} />
+            <AiOutlineClose
+              className={openMenu ? "text-white" : "text-black"}
+              size={20}
+            />
           ) : (
-            <AiOutlineMenu size={20} />
+            <AiOutlineMenu
+              className={openMenu ? "text-white" : "text-black"}
+              size={20}
+            />
           )}
         </div>
 
@@ -65,9 +71,8 @@ export const Navbar = () => {
               ? " sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-500 "
               : " sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-500 "
           }
-          style={{ color: `${textColor}` }}
         >
-          <ul style={{ color: `${textColor}` }}>
+          <ul>
             <li className=" p-4 text-4xl hover:text-gray-500">
               <Link onClick={() => setOpenMenu(!openMenu)} href="/">
                 Home
